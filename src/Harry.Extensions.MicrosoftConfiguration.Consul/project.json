@@ -1,0 +1,50 @@
+﻿{
+  "packOptions": {
+    "summary": "Consul configuration provider implementation for Microsoft.Extensions.Configuration",
+    "tags": [
+      "configuration",
+      "consul"
+    ],
+    "owners": [ "Harry" ],
+    "projectUrl": "https://github.com/harry-wangx/Harry.Extensions.MicrosoftConfiguration",
+    "licenseUrl": "https://github.com/harry-wangx/Harry.Extensions.MicrosoftConfiguration/blob/master/LICENSE",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/harry-wangx/Harry.Extensions.MicrosoftConfiguration"
+    }
+  },
+  "authors": [ "Harry" ],
+  "description": "Consul configuration provider implementation for Microsoft.Extensions.Configuration",
+  "version": "0.1.0-alpha1",
+  "title": "Harry.Extensions.MicrosoftConfiguration.Consul",
+
+  "buildOptions": {
+    "warningsAsErrors": true,
+    "xmlDoc": false
+  },
+
+  "dependencies": {
+    "Microsoft.Extensions.Configuration": "1.0.0"
+  },
+
+  "frameworks": {
+    "net45": {
+      "dependencies": {
+        "Consul": "0.7.2.1"
+      }
+    },
+    "net451": {
+      "dependencies": {
+        "Consul": "0.7.2.1"
+      }
+    },
+    "netstandard1.3": {
+      "buildOptions": {
+        "define": [ "COREFX" ]
+      },
+      "dependencies": {
+        "Consul": "0.7.2.1"
+      }
+    }
+  }
+}
