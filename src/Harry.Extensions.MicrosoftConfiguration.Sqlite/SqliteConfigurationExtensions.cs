@@ -31,10 +31,10 @@ namespace Microsoft.Extensions.Configuration
             builder.Add(new SqliteConfigurationSource() { ConnectionString = connectionString });
             return builder;
         }
-        public static IConfigurationBuilder AddSqlite(this IConfigurationBuilder builder, DbConnection connection, Action<SqliteDbContextOptionsBuilder> sqliteOptionsAction = null)
-        {
-            return builder;
-        }
+        //public static IConfigurationBuilder AddSqlite(this IConfigurationBuilder builder, DbConnection connection, Action<SqliteDbContextOptionsBuilder> sqliteOptionsAction = null)
+        //{
+        //    return builder;
+        //}
 
         //public static IConfigurationBuilder AddSqlite<TContext>(this IConfigurationBuilder builder, string connectionString, Action<SqliteDbContextOptionsBuilder> sqliteOptionsAction = null) where TContext : DbContext
         //{
