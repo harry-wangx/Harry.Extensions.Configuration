@@ -18,10 +18,14 @@ namespace Harry.Extensions.MicrosoftConfiguration.Sqlite
         public override void Load()
         {
             List<ConfigInfo> configs = null;
+
             using (ConfigurationDbContext db = new ConfigurationDbContext(connectionString))
             {
+                db.Database.EnsureCreated();
+
                 configs = db.Configs.ToList();
             }
+
             if (configs != null && configs.Count > 0)
             {
                 foreach (var item in configs)

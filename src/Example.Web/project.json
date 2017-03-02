@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "Harry.Extensions.MicrosoftConfiguration.Sqlite": "1.0.0-*",
+    "Harry.Extensions.MicrosoftConfiguration.Sqlite": "0.1.0-*",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
   },

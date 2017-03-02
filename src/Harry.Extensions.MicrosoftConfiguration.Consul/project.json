@@ -1,4 +1,27 @@
 ﻿{
+  "dependencies": {
+    "Microsoft.Extensions.Configuration": "1.0.0"
+  },
+  "frameworks": {
+    "net45": {
+      "dependencies": {
+        "Consul": "0.7.2.1"
+      }
+    },
+    "net451": {
+      "dependencies": {
+        "Consul": "0.7.2.1"
+      }
+    },
+    "netstandard1.3": {
+      "buildOptions": {
+        "define": [ "COREFX" ]
+      },
+      "dependencies": {
+        "Consul": "0.7.2.1"
+      }
+    }
+  },
   "packOptions": {
     "summary": "Consul configuration provider implementation for Microsoft.Extensions.Configuration",
     "tags": [
@@ -21,30 +44,5 @@
   "buildOptions": {
     "warningsAsErrors": true,
     "xmlDoc": false
-  },
-
-  "dependencies": {
-    "Microsoft.Extensions.Configuration": "1.0.0"
-  },
-
-  "frameworks": {
-    "net45": {
-      "dependencies": {
-        "Consul": "0.7.2.1"
-      }
-    },
-    "net451": {
-      "dependencies": {
-        "Consul": "0.7.2.1"
-      }
-    },
-    "netstandard1.3": {
-      "buildOptions": {
-        "define": [ "COREFX" ]
-      },
-      "dependencies": {
-        "Consul": "0.7.2.1"
-      }
-    }
   }
 }

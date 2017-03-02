@@ -1,6 +1,4 @@
 ﻿{
-  "version": "1.0.0-*",
-
   "dependencies": {
     "NETStandard.Library": "1.6.0",
     "Microsoft.Extensions.Configuration": "1.0.0",
@@ -14,5 +12,29 @@
     "net451": {
 
     }
+  },
+
+  "packOptions": {
+    "summary": "Sqlite configuration provider implementation for Microsoft.Extensions.Configuration",
+    "tags": [
+      "configuration",
+      "sqlite"
+    ],
+    "owners": [ "Harry" ],
+    "projectUrl": "https://github.com/harry-wangx/Harry.Extensions.MicrosoftConfiguration",
+    "licenseUrl": "https://github.com/harry-wangx/Harry.Extensions.MicrosoftConfiguration/blob/master/LICENSE",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/harry-wangx/Harry.Extensions.MicrosoftConfiguration"
+    }
+  },
+  "authors": [ "Harry" ],
+  "description": "Sqlite configuration provider implementation for Microsoft.Extensions.Configuration",
+  "version": "0.1.0-alpha1",
+  "title": "Harry.Extensions.MicrosoftConfiguration.Sqlite",
+
+  "buildOptions": {
+    "warningsAsErrors": true,
+    "xmlDoc": false
   }
 }

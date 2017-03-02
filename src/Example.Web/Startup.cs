@@ -20,14 +20,14 @@ namespace Example.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            using (var db = new ConfigurationDbContext("Data Source=./config.db;"))
-            {
-                if (db.Database.EnsureCreated())
-                {
-                    db.Configs.Add(new ConfigInfo() { Key = "global:time", Value = DateTime.Now.ToString(), LastUpdateTime = DateTime.Now });
-                    db.SaveChanges();
-                }
-            }
+            //using (var db = new ConfigurationDbContext("Data Source=./config.db;"))
+            //{
+            //    if (db.Database.EnsureCreated())
+            //    {
+            //        db.Configs.Add(new ConfigInfo() { Key = "global:time", Value = DateTime.Now.ToString(), LastUpdateTime = DateTime.Now });
+            //        db.SaveChanges();
+            //    }
+            //}
         }
 
 
