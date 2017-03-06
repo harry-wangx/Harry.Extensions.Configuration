@@ -30,7 +30,7 @@
   },
   "authors": [ "Harry" ],
   "description": "Sqlite configuration provider implementation for Microsoft.Extensions.Configuration",
-  "version": "0.1.0-alpha1",
+  "version": "0.1.0-alpha2",
   "title": "Harry.Extensions.MicrosoftConfiguration.Sqlite",
 
   "buildOptions": {
