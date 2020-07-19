@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Harry.Extensions.MicrosoftConfiguration.Consul
+namespace Harry.Extensions.Configuration.Consul
 {
     /// <summary>
     /// 
