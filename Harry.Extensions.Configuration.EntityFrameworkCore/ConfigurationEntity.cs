@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Harry.Extensions.MicrosoftConfiguration.Sqlite
+namespace Harry.Extensions.Configuration.EntityFrameworkCore
 {
-    public class ConfigInfo
+    public class ConfigurationEntity
     {
-        [Key]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// 键
+        /// </summary>
         public string Key { get; set; }
 
         /// <summary>
         /// 值
         /// </summary>
         public string Value { get; set; }
-
+		
         /// <summary>
         /// 说明
         /// </summary>

@@ -1,0 +1,2 @@
+Harry.Extensions.Configuration.EntityFrameworkCore
+Harry.Extensions.Configuration.Yaml
