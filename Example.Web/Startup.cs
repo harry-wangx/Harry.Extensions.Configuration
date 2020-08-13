@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -50,8 +51,15 @@ namespace Example.Web
                 });
                 endpoints.MapGet("/set", async context =>
                 {
-                    _configuration["global:time"] = DateTime.Now.ToString();
-                    await context.Response.WriteAsync(_configuration["global:time"]);
+                    var value = DateTime.Now.ToString();
+                    Stopwatch sw = new Stopwatch();
+                    sw.Start();
+                    for (int i = 0; i < 100; i++)
+                    {
+                        _configuration["global:time"] = value;
+                    }
+                    sw.Stop();
+                    await context.Response.WriteAsync(_configuration["global:time"] + Environment.NewLine + sw.ElapsedMilliseconds.ToString());
                 });
 
                 endpoints.MapGet("/get", async context =>
