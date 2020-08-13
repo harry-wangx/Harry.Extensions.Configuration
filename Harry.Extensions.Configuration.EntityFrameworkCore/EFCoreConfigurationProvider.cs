@@ -94,7 +94,7 @@ namespace Harry.Extensions.Configuration.EntityFrameworkCore
                     }
                     finally
                     {
-                        //即使没有添加数据,只要实例化了DbContext,也可启动延迟保存.
+                        //即使没有添加数据,只要实例化了DbContext,也要启动延迟保存.
                         if (needSave)
                         {
                             ThreadPool.QueueUserWorkItem(new WaitCallback(DelaySaveChanges));
@@ -136,6 +136,9 @@ namespace Harry.Extensions.Configuration.EntityFrameworkCore
                             _saveDb = null;
                             _tran = null;
                         }
+#if DEBUG
+                        Console.WriteLine("保存成功");
+#endif
                         return;
                     }
                 }

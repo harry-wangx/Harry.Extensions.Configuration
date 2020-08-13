@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -57,6 +58,7 @@ namespace Example.Web
                     for (int i = 0; i < 100; i++)
                     {
                         _configuration["global:time"] = value;
+                        //Thread.Sleep(10);
                     }
                     sw.Stop();
                     await context.Response.WriteAsync(_configuration["global:time"] + Environment.NewLine + sw.ElapsedMilliseconds.ToString());
